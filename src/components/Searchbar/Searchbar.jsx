@@ -2,8 +2,8 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import styles from "./Searchbar.module.css";
 
-const Searchbar = ({ onSubmit }) => {
-  const [searchQuery, setSearchQuery] = useState("");
+const Searchbar = ({ onSubmit, input }) => {
+  const [searchQuery, setSearchQuery] = useState(input || "");
 
   const handleCange = (event) => {
     setSearchQuery(event.currentTarget.value);

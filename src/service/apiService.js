@@ -9,7 +9,7 @@ export const getTrendingMovies = () =>
     .then(({ data }) => data.results)
     .catch((error) => error);
 
-export const search = (searchQuery = "batman") =>
+export const search = (searchQuery = "") =>
   axios
     .get(`${BASE_URL}/search/movie?query=${searchQuery}&api_key=${API_KEY}`)
     .then(({ data }) => data.results)
