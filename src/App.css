@@ -1,0 +1,7 @@
+.navLink {
+  font-size: 20px;
+  color: currentColor;
+}
+.navLinkActive {
+  color: palevioletred;
+}
